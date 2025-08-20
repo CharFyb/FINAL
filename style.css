@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-* {
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -124,22 +123,20 @@ a {
     margin-bottom: 60px;
 }
 .designerdeveloper_box--input {
-    width: 100%;
-    max-width: 500px;
-    background-color: #283036;
-    border-radius: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 110;
-    border: 1.5px solid;
-    border-image-source: linear-gradient(90.89deg, rgba(255, 255, 255, 0.1) -1.67%, rgba(255, 255, 255, 0) 103.73%);
-    border-image-slice: 1;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 11px 8px 18px;
+  border-radius: 15px;
+  background-color: #283036;
+  border: 1.5px solid transparent;
+  background:
+    linear-gradient(#283036, #283036) padding-box,
+    linear-gradient(90.89deg, rgba(255,255,255,0.1) -1.67%, rgba(255,255,255,0) 103.73%) border-box;
+  background-clip: padding-box, border-box;
 }
-
-
-
-    
 .designerdeveloper_box--input--write {
     width: 100%;
     max-width: 470px;
@@ -294,7 +291,7 @@ a {
     align-items: center;
 }
 .popular_tools--card:hover {
-    transform: translateY(-25px);
+    transform: translateY(-20px);
     background-image: url("./img/bacgroundcard.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -565,8 +562,11 @@ a {
     column-gap: 25px;
     row-gap: 50px;
 }
-                                             /*0-------*/                            
-
+                                             /*0-------*/   
+.men {
+    margin-top: 200px;
+    position: relative;
+}                                                                      
 .men_box {
     width: 100%;
     max-width: 1224px;
@@ -583,6 +583,33 @@ a {
     justify-content: center;
     margin-top: 100px;
     margin-bottom: 250px;
+}
+.men_cont {
+    width: 100%;
+    max-width: 1224px;
+}
+.men_cont--quotes {
+
+    font-family: Lora;
+    font-weight: 250;
+    font-size: 250px;
+    line-height: 150%;
+    letter-spacing: 0;
+    position: relative;
+    display: inline-block;
+
+    background: linear-gradient(
+        188.88deg,
+        rgba(252, 252, 252, 0) 20.34%,
+        rgba(255, 255, 255, 0.5) 155.72%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    transform: rotate(20deg);
+    left: 866px;
+    top: 14px;
+    
 }
 .men_box--text {
     font-family: Poppins;
@@ -646,16 +673,20 @@ a {
     border: none;
 }
 .contributor_box {
-    width: 100%;
-    max-width: 549px;
-    background-color: #283036;
-    /*добавить бордер градиентом*/
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: none;
-    border-radius: 15px;
-    margin-bottom: 240px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #283036;
+  border: 1.5px solid transparent;
+  background:
+    linear-gradient(#283036, #283036) padding-box,
+    linear-gradient(90.89deg, rgba(255,255,255,0.1) -1.67%, rgba(255,255,255,0) 103.73%) border-box;
+  background-clip: padding-box, border-box;
+  margin-bottom: 240px;
 }
 .contributor_box--button {
     font-family: Poppins;
